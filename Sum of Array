@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Pick 5 Numbers of your choice\n\n";
+
+	int pickYourNumbers[5];
+	int positiveSum = 0;
+	int totalSum = 0;
+	for (int i = 0; i <= 4; i++) {
+		cout << "Number: ";
+		cin >> pickYourNumbers[i];
+	}
+
+	if (pickYourNumbers[4] >= 0) {
+		positiveSum += pickYourNumbers[4];
+	}
+
+	for (int i = 0; i <= 4; i++) {
+		cout << (pickYourNumbers + 1) << "    ";
+	}
+	totalSum = positiveSum;
+
+	cout << endl;
+	cout << "Total sum of non-negative values: " << positiveSum << endl;
+	return 0;
+}
